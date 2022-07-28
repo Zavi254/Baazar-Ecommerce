@@ -4,7 +4,7 @@ function Men() {
   const [menShoes, setMenShoes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/men-shoes")
+    fetch("https://pacific-leaf-twig.glitch.me/men-shoes")
       .then((response) => response.json())
       .then((data) => setMenShoes(data));
   }, []);
