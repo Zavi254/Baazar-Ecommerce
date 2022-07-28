@@ -4,7 +4,7 @@ import Home from "./Components/Home";
 import Cart from "./Components/Cart";
 import Men from "./Components/Men";
 import Women from "./Components/Women";
-import Children from "./Components/Children";
+import Kids from "./Components/Kids";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -12,11 +12,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route path="home" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="cart" element={<Cart />} />
           <Route path="men-shoes" element={<Men />} />
           <Route path="women-shoes" element={<Women />} />
-          <Route path="children-shoes" element={<Children />} />
+          <Route path="kids-shoes" element={<Kids />} />
         </Route>
       </Routes>
     </BrowserRouter>

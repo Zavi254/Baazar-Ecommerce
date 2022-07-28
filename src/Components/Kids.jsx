@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 
-function Women() {
-  const [womenShoes, setWomenShoes] = useState([]);
+function Kids() {
+  const [kidShoes, setKidShoes] = useState([]);
 
   useEffect(() => {
-    fetch("https://pacific-leaf-twig.glitch.me/women-shoes")
+    fetch("https://pacific-leaf-twig.glitch.me/kids-shoes")
       .then((response) => response.json())
-      .then((data) => setWomenShoes(data));
+      .then((data) => setKidShoes(data));
   }, []);
 
   return (
     <div className="d-flex flex-wrap justify-content-center gap-5 mt-5">
-      {womenShoes.map((shoe) => (
+      {kidShoes.map((shoe) => (
         <div key={shoe.id} className="card mt-5" style={{ width: "25rem" }}>
           <img src={shoe.img} className="card-img-top img-fluid" alt="A shoe" />
           <div className="card-body d-flex">
@@ -30,4 +30,4 @@ function Women() {
   );
 }
 
-export default Women;
+export default Kids;

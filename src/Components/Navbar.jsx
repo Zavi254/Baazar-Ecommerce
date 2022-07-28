@@ -18,8 +18,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/children-shoes" style={fontStyles}>
-              Children
+            <Link className="nav-link" to="/kids-shoes" style={fontStyles}>
+              Kids
             </Link>
           </li>
           <li className="nav-item">

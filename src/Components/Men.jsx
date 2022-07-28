@@ -9,8 +9,6 @@ function Men() {
       .then((data) => setMenShoes(data));
   }, []);
 
-  console.log(menShoes);
-
   return (
     <div className="d-flex flex-wrap justify-content-center gap-5 mt-5">
       {menShoes.map((shoe) => (
