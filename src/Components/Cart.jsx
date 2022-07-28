@@ -1,23 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function Cart() {
-  const [cart, setCart] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:8000/men-shoes")
-      .then((res) => res.json())
-      .then((data) => setCart(data));
-  }, []);
-
-  console.log(cart);
-
-  return (
-    <div>
-      {cart.map((item) => (
+  
+    return (
         <div>
-          <img src={item.img} alt="Images of shoes" />
+            This is the Cart
         </div>
-      ))}
-    </div>
-  );
+    )
 }
