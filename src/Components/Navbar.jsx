@@ -34,7 +34,7 @@ export default function Navbar() {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/cart" style={fontStyles}>
-              <i className="fas fa-cart-arrow-down"></i>
+              <i className="fas fa-cart-arrow-down"></i> 
             </Link>
           </li>
         </ul>

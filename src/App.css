@@ -10,3 +10,31 @@
   overflow: hidden;
   z-index: 1000;
 }
+.underTheNavbar{
+  margin-top: 160px;
+}
+.cartContainer{
+  /* border: 2px solid red; */
+  width: 80%;
+  margin: auto;
+  height: 400px;
+  border-radius: 7px;
+}
+.counter{
+  background-color: #fff;
+  border-radius: 7px;
+  color: #000;
+  text-align: center;
+  height: auto;
+  font-size: 1.4rem;
+  position: fixed;
+  right: 5px;
+  top: 19px;
+  width: 10%;
+  height: auto;
+  font-weight: bold;
+  z-index: 2000;
+}
+.cartImage{
+  margin-right: 30px;
+}
