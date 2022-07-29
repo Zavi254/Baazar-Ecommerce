@@ -10,8 +10,6 @@ function Women() {
     setAddToCart(!addToCart)
   }
   
-
-
   useEffect(() => {
     fetch("https://pacific-leaf-twig.glitch.me/women-shoes")
       .then((response) => response.json())
@@ -27,7 +25,7 @@ function Women() {
             <div>
               <h5 className="card-title">{shoe.name}</h5>
               <p className="card-text">{`Items Remaining ${shoe.itemsLeft}`}</p>
-              <button key={index} onClick={addItems} className="btn btn-primary">{addToCart ? "Add to Cart" : "Remove from the Cart"}</button>
+              <button onClick={addItems} className="btn btn-primary">{addToCart ? "Add to Cart" : "Remove from the Cart"}</button>
             </div>
             <div className="mx-auto align-self-center">
               <h4>{`$ ${shoe.price}`}</h4>

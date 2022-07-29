@@ -1,11 +1,10 @@
 import React from "react";
 
 function Cart() {
-
   const handleCheckOut = (e) => {
-    e.preventDefault()
-    alert("Congratulations for your Purchase!!!")
-  }
+    e.preventDefault();
+    alert("Congratulations for your Purchase!!!");
+  };
 
   return (
     <div className="underTheNavbar">
@@ -18,7 +17,7 @@ function Cart() {
             className="img-fluid"
           />
         </div>
-        <form>
+        <form className="holla">
           <div class="row mb-4">
             <div class="col">
               <div class="form-outline">
@@ -53,13 +52,17 @@ function Cart() {
           </div>
 
           <div class="form-outline mb-4">
-            <input type="number" id="form6Example6" class="form-control" />
+            <input type="tel" id="form6Example6" class="form-control" />
             <label class="form-label" for="form6Example6">
               Phone
             </label>
           </div>
 
-          <button type="submit" onClick={handleCheckOut} class="btn btn-primary btn-block mb-4">
+          <button
+            type="submit"
+            onClick={handleCheckOut}
+            class="btn btn-primary btn-block mb-4"
+          >
             Place order
           </button>
         </form>
