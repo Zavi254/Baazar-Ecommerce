@@ -13,11 +13,6 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-sm bg-dark justify-content-center">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link className="nav-link" to="/home" style={fontStyles}>
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link className="nav-link" to="/kids-shoes" style={fontStyles}>
               Kids
             </Link>
