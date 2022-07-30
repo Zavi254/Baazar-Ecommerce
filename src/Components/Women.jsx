@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
+import AddButton from "./AddButton";
 
 function Women() {
   const [womenShoes, setWomenShoes] = useState([]);
   const [count, setCount] = useState(0);
-  const [addToCart, setAddToCart] = useState(true)
 
   const addItems = () => {
     setCount(count + 1)
-    setAddToCart(!addToCart)
   }
-  
+
   useEffect(() => {
     fetch("https://pacific-leaf-twig.glitch.me/women-shoes")
       .then((response) => response.json())
@@ -25,7 +24,7 @@ function Women() {
             <div>
               <h5 className="card-title">{shoe.name}</h5>
               <p className="card-text">{`Items Remaining ${shoe.itemsLeft}`}</p>
-              <button onClick={addItems} className="btn btn-primary">{addToCart ? "Add to Cart" : "Remove from the Cart"}</button>
+              <AddButton addItems={addItems} />
             </div>
             <div className="mx-auto align-self-center">
               <h4>{`$ ${shoe.price}`}</h4>
@@ -33,7 +32,7 @@ function Women() {
           </div>
         </div>
       ))}
-         <div className="counter">{`Items: ${count}`}</div>
+      <div className="counter">{`Items added in the Cart : ${count}`}</div>
     </div>
   );
 }
