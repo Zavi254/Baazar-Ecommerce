@@ -1,6 +1,5 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Home from "./Components/Home";
 import Cart from "./Components/Cart";
 import Men from "./Components/Men";
 import Women from "./Components/Women";
@@ -12,7 +11,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route path="home" element={<Home />} />
           <Route path="cart" element={<Cart />} />
           <Route path="men-shoes" element={<Men />} />
           <Route path="women-shoes" element={<Women />} />
